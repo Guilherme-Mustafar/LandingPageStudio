@@ -1,0 +1,37 @@
+@import '../abstract/variaveis';
+
+.container__nossos-clientes{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 0 6em 0;
+    padding: 0 3em 0 8em;
+    
+    .container__textos-clientes{
+        padding-right: 3em;
+
+        .titulo__nossos-clientes{
+            font-size: 40px;
+        }
+
+        .texto__nossos-clientes{
+            font-size: 18px;
+            color: $cinza-textos;
+            padding: 0.5em 0;
+            line-height: 30px;
+        }
+
+    }
+
+    .logo__clientes{
+        display: flex;
+        align-items: center;
+        padding: 1em;
+    }
+
+    .logo__clientes img{
+        padding: 0 1em;
+        &:nth-child(4){
+            padding-top: 1em;
+        }
+    }
+}

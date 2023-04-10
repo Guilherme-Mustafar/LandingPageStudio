@@ -1,0 +1,109 @@
+$background-laraja: #ffec9a;
+$background-rosa: #ff94c6;
+$background-verde: #97ffc9;
+$background-azul: #9dc6ff;
+
+@import '../abstract/variaveis';
+@mixin backgroundIcones($cor-background){
+    width: 75px;
+    background: $cor-background;
+    padding: 1em;
+    border-radius: 15px;
+}
+
+.container__servicos{
+    height: 860px;
+    display: flex;
+    align-items: center; 
+
+    .container__imagem{
+        position: absolute;
+        right: 5px;
+        top: 1020px;
+        z-index: 1;
+    }
+
+    .container__imagem-circulo{
+        position: absolute;
+        width: 8%;
+        top: 1590px;
+        left: 83em;
+        z-index: 0;
+    }
+    
+    .lado__esquerdo-servicos{
+        padding: 0 8em;
+        z-index: 2;
+
+        .titulo__servicos{
+            font-size: 40px;
+        }
+
+        .texto__servicos{
+            padding: 2em 0;
+            line-height: 30px;
+            font-size: 16px;
+            color: $cinza-textos;
+        }
+    }
+    
+    .lado__direito-servicos{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 1em;
+        gap: 20px;
+
+        .posicao:nth-child(2n){
+            position: relative;
+            bottom: 80px;
+        }
+
+        .caixa-servicos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            background: $cor-de-fundo;
+            width: 310px;
+            height: 380px;
+            box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.05);
+            border-radius: 40px;
+            z-index: 2;
+                                                                                                                                                                                                            
+
+            .container__imagem-icones{
+                @include backgroundIcones($background-azul);
+            }
+
+            .container__imagem-icones2{
+                @include backgroundIcones($background-laraja);
+            }
+
+            .container__imagem-icones3{
+                @include backgroundIcones($background-rosa);
+            }
+
+            .container__imagem-icones4{
+                @include backgroundIcones($background-verde);
+            }
+            
+
+            }
+
+            .titulo__caixa-servicos{
+                font-size: 24px;
+                text-align: center;
+                padding: 0 3em;
+            }
+
+            .texto__caixa-servicos{
+                font-size: 18px;
+                color: $cinza-textos;
+                text-align: center;
+                padding: 0 1em;
+            }
+        }
+    }
+    
+    

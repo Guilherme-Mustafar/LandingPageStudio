@@ -1,0 +1,27 @@
+@import '../abstract/variaveis';
+
+.container__nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .nav__logo{
+        font-weight: 700;
+        font-size: 20px;
+    }
+    .nav__opcoes{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0 0 15em;
+
+        .nav__itens{
+            padding: 0 1em;
+            text-decoration: none;
+            color: $cor-primaria;
+            &:hover{
+                color: $cor-botao;
+            }
+        }
+    }
+}
+

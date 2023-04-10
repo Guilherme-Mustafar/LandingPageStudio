@@ -1,0 +1,64 @@
+@import '../abstract/variaveis';
+
+.container__apresentacao{
+    display: flex;
+    padding: 0 2em;
+
+    .lado_esquerdo-apresentacao{
+       padding: 8.5em 5em 0 7em;
+
+       .titulo__apresentacao{
+            font-weight: 400;
+            font-size: 40px;
+       }
+
+       .texto__apresentacao{
+        font-weight: 400;
+        font-size: 16px;
+        color: $cor-secundaria;
+        line-height: 30px;
+        margin: 2em 0;
+       }
+        .botao__link{
+            text-decoration: none;
+            font-weight: 700;
+            background: $cor-botao;
+            color: $branco;
+            border-radius: 30px;
+            padding: 1em;
+            display: block;
+            width: 80px;
+            text-align: center;
+            &:hover{
+                border: 1px solid $cor-botao;
+                background: $branco;
+                color: $cor-botao;
+            }
+        }
+       }
+
+       .lado__direito{  
+            height: 670px;
+
+            .posicao__retangulo{
+                position: relative;
+                top: 420px;
+                left: 380px;
+            }
+
+            .posicao__circulo{
+               position: relative;
+               right: 60px;
+               bottom: 48px;
+           }
+
+            .imagem__apresentacao{
+               position: relative;
+               bottom: 180px;
+            }
+
+
+
+
+       }
+    }
